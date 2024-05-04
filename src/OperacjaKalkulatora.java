@@ -26,8 +26,8 @@ public class OperacjaKalkulatora implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         try {
-            double num1 = Integer.parseInt(operand1.getText());
-            double num2 = Integer.parseInt(operand2.getText());
+            double num1 = Double.parseDouble(operand1.getText());
+            double num2 = Double.parseDouble(operand2.getText());
             if ("+".equals(e.getActionCommand())) {
                 wynik.setText(Double.toString(num1 + num2));
                 System.out.println(wynik.getText());
